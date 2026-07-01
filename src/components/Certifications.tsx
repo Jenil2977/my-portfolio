@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Award, CheckCircle, ShieldAlert, Sparkles, Trophy } from "lucide-react";
+import { Award, CheckCircle, ShieldCheck, Sparkles, Trophy } from "lucide-react";
 import { resumeData } from "../data/resume";
 
 export const Certifications: React.FC = () => {
@@ -28,7 +28,7 @@ export const Certifications: React.FC = () => {
           {/* Left Column: Certifications */}
           <div className="lg:col-span-7 space-y-6">
             <div className="flex items-center space-x-3 mb-6">
-              <Award className="text-gold-500" size={24} />
+              <Award className="text-gold-500" size={22} />
               <h3 className="text-xl font-bold text-gray-200">
                 Professional Certifications
               </h3>
@@ -42,17 +42,17 @@ export const Certifications: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
-                  className="glass-panel p-5 rounded-2xl border border-white/5 flex items-start space-x-4 glass-panel-hover"
+                  className="premium-card p-5 rounded-2xl border border-white/5 flex items-start space-x-4"
                 >
-                  <div className="p-3 bg-gold-950/20 border border-gold-800/30 rounded-xl shrink-0">
-                    <Award className="text-gold-500" size={20} />
+                  <div className="p-3 bg-gold-950/20 border border-gold-800/30 rounded-xl shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Award className="text-gold-500 animate-pulse" size={20} />
                   </div>
                   <div className="flex-grow">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                       <h4 className="font-bold text-gray-200 text-sm md:text-base">
                         {cert.title}
                       </h4>
-                      <span className="text-[10px] font-bold text-gold-400 bg-gold-950/40 border border-gold-800/30 px-2 py-0.5 rounded shrink-0 self-start sm:self-center">
+                      <span className="text-[9px] font-bold text-gold-400 bg-gold-950/40 border border-gold-800/30 px-2.5 py-1 rounded shrink-0 self-start sm:self-center uppercase tracking-wider">
                         {cert.issuer} • {cert.year}
                       </span>
                     </div>
@@ -68,7 +68,7 @@ export const Certifications: React.FC = () => {
           {/* Right Column: Achievements & Stats */}
           <div className="lg:col-span-5 space-y-8">
             <div className="flex items-center space-x-3 mb-6">
-              <Trophy className="text-gold-500" size={24} />
+              <Trophy className="text-gold-500" size={22} />
               <h3 className="text-xl font-bold text-gray-200">
                 Key Accomplishments
               </h3>
@@ -84,12 +84,12 @@ export const Certifications: React.FC = () => {
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Sparkles className="text-gold-400" size={16} />
-                  <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
+                  <Sparkles className="text-gold-400" size={15} />
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                     Highlights Track
                   </span>
                 </div>
-                <span className="text-[10px] text-gold-400 font-bold bg-gold-950/30 border border-gold-800/30 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                <span className="text-[9px] text-gold-400 font-bold bg-gold-950/30 border border-gold-800/30 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                   Verified
                 </span>
               </div>
@@ -97,8 +97,8 @@ export const Certifications: React.FC = () => {
               <div className="space-y-4">
                 {resumeData.achievements.map((ach, idx) => (
                   <div key={idx} className="flex items-start">
-                    <CheckCircle className="text-gold-500 mr-3 mt-0.5 shrink-0" size={16} />
-                    <p className="text-sm text-gray-300 leading-relaxed">
+                    <CheckCircle className="text-gold-500 mr-3 mt-0.5 shrink-0" size={15} />
+                    <p className="text-sm text-gray-300 leading-relaxed font-normal">
                       {ach}
                     </p>
                   </div>
@@ -107,10 +107,10 @@ export const Certifications: React.FC = () => {
             </motion.div>
 
             {/* Quote/Recruiter note */}
-            <div className="glass-panel p-6 rounded-2xl border border-white/5 flex items-start space-x-3">
-              <ShieldAlert className="text-gold-400 mt-0.5 shrink-0" size={18} />
+            <div className="glass-panel p-5 rounded-2xl border border-white/5 flex items-start space-x-3">
+              <ShieldCheck className="text-emerald-400 mt-0.5 shrink-0" size={18} />
               <p className="text-xs text-gray-500 leading-relaxed">
-                Certifications and records are verified via official portals (Anthropic credentials, Simplilearn ID, and GitHub commits).
+                Certifications and records are verified via official credentials portals (Anthropic credentials verification, Simplilearn platform, and GitHub repositories commit track).
               </p>
             </div>
           </div>

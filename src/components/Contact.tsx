@@ -109,38 +109,38 @@ export const Contact: React.FC = () => {
 
             <div className="grid grid-cols-1 gap-4">
               {/* Email Card */}
-              <div className="glass-panel p-5 rounded-2xl border border-white/5 flex items-center space-x-4">
+              <div className="premium-card p-5 rounded-2xl border border-white/5 flex items-center space-x-4">
                 <div className="p-3 bg-white/5 border border-white/10 rounded-xl text-gold-500">
                   <Mail size={20} />
                 </div>
                 <div>
-                  <h4 className="text-xs text-gray-500 font-bold uppercase tracking-wider">Email Me</h4>
-                  <a href={`mailto:${resumeData.profile.email}`} className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors">
+                  <h4 className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Email Me</h4>
+                  <a href={`mailto:${resumeData.profile.email}`} className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors cursor-pointer">
                     {resumeData.profile.email}
                   </a>
                 </div>
               </div>
 
               {/* Phone Card */}
-              <div className="glass-panel p-5 rounded-2xl border border-white/5 flex items-center space-x-4">
+              <div className="premium-card p-5 rounded-2xl border border-white/5 flex items-center space-x-4">
                 <div className="p-3 bg-white/5 border border-white/10 rounded-xl text-gold-500">
                   <Phone size={20} />
                 </div>
                 <div>
-                  <h4 className="text-xs text-gray-500 font-bold uppercase tracking-wider">Call Me</h4>
-                  <a href={`tel:${resumeData.profile.phone}`} className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors">
+                  <h4 className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Call Me</h4>
+                  <a href={`tel:${resumeData.profile.phone}`} className="text-sm font-semibold text-gray-300 hover:text-gold-400 transition-colors cursor-pointer">
                     {resumeData.profile.phone}
                   </a>
                 </div>
               </div>
 
               {/* Location Card */}
-              <div className="glass-panel p-5 rounded-2xl border border-white/5 flex items-center space-x-4">
+              <div className="premium-card p-5 rounded-2xl border border-white/5 flex items-center space-x-4">
                 <div className="p-3 bg-white/5 border border-white/10 rounded-xl text-gold-500">
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h4 className="text-xs text-gray-500 font-bold uppercase tracking-wider">Location</h4>
+                  <h4 className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Location</h4>
                   <p className="text-sm font-semibold text-gray-300">{resumeData.profile.location}</p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ export const Contact: React.FC = () => {
                 href={resumeData.profile.github}
                 target="_blank"
                 rel="noreferrer"
-                className="p-2 glass-panel border border-white/10 hover:border-gold-500/30 text-gray-400 hover:text-gold-400 rounded-lg transition-all"
+                className="p-2.5 glass-panel border border-white/10 hover:border-gold-500/30 text-gray-400 hover:text-gold-400 rounded-lg transition-all cursor-pointer"
                 aria-label="GitHub"
               >
                 <FaGithub size={16} />
@@ -162,7 +162,7 @@ export const Contact: React.FC = () => {
                 href={resumeData.profile.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="p-2 glass-panel border border-white/10 hover:border-gold-500/30 text-gray-400 hover:text-gold-400 rounded-lg transition-all"
+                className="p-2.5 glass-panel border border-white/10 hover:border-gold-500/30 text-gray-400 hover:text-gold-400 rounded-lg transition-all cursor-pointer"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin size={16} />
@@ -186,8 +186,8 @@ export const Contact: React.FC = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 rounded-xl bg-dark-card border text-sm text-gray-200 transition-colors focus:outline-none ${
-                        errors.name ? "border-red-500 focus:border-red-500" : "border-white/5 focus:border-gold-500/50"
+                      className={`w-full px-4 py-3 rounded-xl bg-white/[0.02] border text-sm text-gray-200 transition-all focus:outline-none focus:bg-white/[0.04] focus:shadow-[0_0_15px_rgba(212,163,89,0.05)] ${
+                        errors.name ? "border-red-500/50 focus:border-red-500" : "border-white/10 focus:border-gold-500/40"
                       }`}
                       placeholder="John Doe"
                     />
@@ -205,8 +205,8 @@ export const Contact: React.FC = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 rounded-xl bg-dark-card border text-sm text-gray-200 transition-colors focus:outline-none ${
-                        errors.email ? "border-red-500 focus:border-red-500" : "border-white/5 focus:border-gold-500/50"
+                      className={`w-full px-4 py-3 rounded-xl bg-white/[0.02] border text-sm text-gray-200 transition-all focus:outline-none focus:bg-white/[0.04] focus:shadow-[0_0_15px_rgba(212,163,89,0.05)] ${
+                        errors.email ? "border-red-500/50 focus:border-red-500" : "border-white/10 focus:border-gold-500/40"
                       }`}
                       placeholder="john@example.com"
                     />
@@ -225,8 +225,8 @@ export const Contact: React.FC = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-xl bg-dark-card border text-sm text-gray-200 transition-colors focus:outline-none ${
-                      errors.subject ? "border-red-500 focus:border-red-500" : "border-white/5 focus:border-gold-500/50"
+                    className={`w-full px-4 py-3 rounded-xl bg-white/[0.02] border text-sm text-gray-200 transition-all focus:outline-none focus:bg-white/[0.04] focus:shadow-[0_0_15px_rgba(212,163,89,0.05)] ${
+                      errors.subject ? "border-red-500/50 focus:border-red-500" : "border-white/10 focus:border-gold-500/40"
                     }`}
                     placeholder="Interview / Project Collaboration"
                   />
@@ -244,8 +244,8 @@ export const Contact: React.FC = () => {
                     rows={5}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-xl bg-dark-card border text-sm text-gray-200 transition-colors focus:outline-none resize-none ${
-                      errors.message ? "border-red-500 focus:border-red-500" : "border-white/5 focus:border-gold-500/50"
+                    className={`w-full px-4 py-3 rounded-xl bg-white/[0.02] border text-sm text-gray-200 transition-all focus:outline-none resize-none focus:bg-white/[0.04] focus:shadow-[0_0_15px_rgba(212,163,89,0.05)] ${
+                      errors.message ? "border-red-500/50 focus:border-red-500" : "border-white/10 focus:border-gold-500/40"
                     }`}
                     placeholder="Hi Jenil, I read your resume and I'd like to discuss..."
                   />
@@ -257,7 +257,7 @@ export const Contact: React.FC = () => {
                   <button
                     type="submit"
                     disabled={status === "SENDING"}
-                    className={`group flex items-center justify-center space-x-2 px-6 py-3 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-dark font-bold text-sm tracking-wide shadow-md shadow-gold-500/5 hover:shadow-gold-500/10 transition-all duration-300 w-full md:w-auto ${
+                    className={`group flex items-center justify-center space-x-2 px-6 py-3 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-dark font-bold text-sm tracking-wide shadow-md shadow-gold-500/5 hover:shadow-gold-500/10 transition-all duration-300 w-full md:w-auto cursor-pointer ${
                       status === "SENDING" ? "opacity-60 cursor-not-allowed" : ""
                     }`}
                   >
