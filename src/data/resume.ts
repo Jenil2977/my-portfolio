@@ -132,8 +132,8 @@ export const resumeData: ResumeData = {
     {
       title: "AI Resume Intelligence Platform",
       technologies: ["FastAPI", "Python", "SpaCy", "EasyOCR", "Sentence Transformers", "HTML/CSS"],
-      githubUrl: "https://github.com/jenil-patel",
-      liveUrl: "https://github.com/jenil-patel",
+      githubUrl: "https://github.com/Jenil2977/AI-Resume-Intelligence-Platform",
+      liveUrl: "https://github.com/Jenil2977/AI-Resume-Intelligence-Platform",
       date: "2026",
       description: "An AI-powered resume parsing and analysis platform utilizing advanced NLP and OCR tools to rank candidates and check job descriptions alignment.",
       highlights: [
@@ -152,8 +152,8 @@ export const resumeData: ResumeData = {
     {
       title: "RAG-Based Document Q&A Chatbot",
       technologies: ["Python", "LangChain", "FAISS", "Gemini API", "Streamlit"],
-      githubUrl: "https://github.com/jenil-patel",
-      liveUrl: "https://github.com/jenil-patel",
+      githubUrl: "https://github.com/Jenil2977/RAG-Based-Document-QA-Chatbot",
+      liveUrl: "https://github.com/Jenil2977/RAG-Based-Document-QA-Chatbot",
       date: "2026",
       description: "A Retrieval-Augmented Generation (RAG) chatbot allowing users to upload PDF documents and ask contextual questions using LLMs.",
       highlights: [
@@ -172,8 +172,8 @@ export const resumeData: ResumeData = {
     {
       title: "LostnFound Portal",
       technologies: ["React.js", "TypeScript", "Firebase Firestore", "Firebase Storage", "Flask", "Tailwind CSS"],
-      githubUrl: "https://github.com/jenil-patel",
-      liveUrl: "https://github.com/jenil-patel",
+      githubUrl: "https://github.com/Jenil2977/LostnFound",
+      liveUrl: "https://github.com/Jenil2977/LostnFound",
       date: "2024",
       description: "A full-stack, responsive web application for reporting and claiming lost or found items with image uploads and category filtering.",
       highlights: [
