@@ -82,10 +82,8 @@ export const CustomCursor: React.FC = () => {
     };
   }, []);
 
-  if (!isVisible) return null;
-
   return (
-    <div className={`hidden md:block ${isHovered ? "cursor-hover" : ""}`}>
+    <div className={`hidden md:block pointer-events-none transition-opacity duration-300 ${isHovered ? "cursor-hover" : ""} ${isVisible ? "opacity-100" : "opacity-0"}`}>
       {/* Central gold dot */}
       <div ref={dotRef} className="custom-cursor" />
       {/* Outer delay ring */}
