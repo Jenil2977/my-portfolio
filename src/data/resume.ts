@@ -80,7 +80,7 @@ export const resumeData: ResumeData = {
     linkedin: "https://www.linkedin.com/in/jenil-patel2977/",
     github: "https://github.com/Jenil2977",
     about: "I am a passionate Information Technology student and backend developer specialized in building AI-powered products, Retrieval-Augmented Generation (RAG) chatbots, and optimized REST APIs. With hands-on internship experience in Python, Django, and Java, I love creating clean, scalable backend systems and intelligent tools. I am continuously learning prompt engineering, agent workflows, and machine learning architectures to build software that makes a real-world impact.",
-    resumeUrl: "/resume.pdf"
+    resumeUrl: "./resume.pdf"
   },
   education: [
     {
